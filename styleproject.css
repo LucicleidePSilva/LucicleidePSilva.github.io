@@ -150,3 +150,7 @@ h3 {
 .center a:hover {
     color:aqua;
 }
+.container {
+    padding: 0px 50px;
+}
+

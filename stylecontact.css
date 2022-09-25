@@ -27,13 +27,6 @@ header {
     padding-top: 50px;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid aqua;
-}
-
 .center {
     text-align: center;
 }
@@ -45,36 +38,17 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h3 {
-    color:aqua;
-    padding-top: 50px;
+input{
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px 0px;
 }
-
-footer img {
-    width: 35px;
-    height: 35px;
-
+input[type=text] {
+    height: 100px;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-
-}
-footer a {
-        margin: 20px;
-        text-align: center;
-        
-}
-footer a:hover {
-        color:aqua;
-        
-}
-footer p {
-        margin-top: 2px;
-
-}
-.container {
-    padding: 0px 50px;
+button {
+    background-color: aqua;
+    border-color: #030342;
+    width: 100px;
+    height: 30px;
 }
