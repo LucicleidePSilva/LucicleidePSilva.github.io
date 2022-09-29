@@ -31,17 +31,20 @@ header {
     text-align: center;
 }
 
-h1 {
+h4 {
     color: aqua;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px white;
 }
 
 input{
     width: 100%;
     padding: 8px 0px;
     margin: 8px 0px;
+    border-color: aqua;
+
 }
 input[type=text] {
     height: 100px;
@@ -51,4 +54,11 @@ button {
     border-color: #030342;
     width: 100px;
     height: 30px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer
 }
+button:hover{
+    background-color: aqua;
+    color: white;
+} 

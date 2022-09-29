@@ -28,10 +28,10 @@ header {
 }
 
 header img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 5px solid aqua;
+    border: 5px dotted aqua;
 }
 
 .center {
@@ -43,7 +43,9 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px white;
 }
+
 
 h3 {
     color:aqua;
