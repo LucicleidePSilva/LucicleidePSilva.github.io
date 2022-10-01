@@ -7,6 +7,55 @@
     <title>Projetos</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="styleproject.css">
+    <style type="text/css">
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+
+}
+
+</style>
 </head>
 <body>
     <div class="container">
@@ -28,60 +77,28 @@
                 <h1>Projetos</h1>
             </div>
     </header>
-            <div class="slider">
-                
-                <div class="slides">
-                    <!--Radio Buttons-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--Fim Radio Buttons-->
-        
-                    <!--Slide images-->
-                    <div class="slide first">
-                            <img src="./img/slide_a.png" alt="Imagem 1" />
-                    </div>
-                    <div class="slide">
-                            <img src="./img/slide_b.png" alt="Imagem 2" />
-                    </div>
-                    <div class="slide">
-                            <img src="./img/slide_c.png" alt="Imagem 3" />
-                    </div>   
-                    <div class="slide">
-                            <img src="./img/slide_d.png" alt="Imagem 4" />
-                    </div>
-                    <!--Fim Slide images-->
-        
-                    <!--Navigation auto-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-        
-                </div>
-        
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-        
-        
-            </div>
-                
-                <script src="script.js"></script>  
-                
-                <section class="center">
-                    <h2>Para conhecer mais detalhes de cada projeto, click nos links abaixo:</h2>
-                    <br>
-                    <h3>Projeto 1</h3>
-                    <a href="https://lucicleidepsilva.github.io/Luci_Lanches/" target="_blank">
-                    Cardápio Luci Lanches</a>
-                </section>
     </div>
-</body>
-</html> 
+
+    <div id="slider">
+        <figure>
+            <img src="./img/slide_a.png">
+            <img src="./img/slide_b.png">
+            <img src="./img/slide_c.png">
+            <img src="./img/slide_d.png">
+        </figure>
+    </div>
+    
+    <section class="center">
+        <h2>Para conhecer mais detalhes de cada projeto, click nos links abaixo:</h2>
+        <br>
+        <h3>Projeto 1</h3>
+        <a href="https://lucicleidepsilva.github.io/Luci_Lanches/" target="_blank">
+        Cardápio Luci Lanches</a>
+        <br>
+        <h3>Projeto 2</h3>
+        <a href="https://lucicleidepsilva.github.io/relogio_digital/" target="_blank">
+        Relógio Digital</a>
+    </section>
+
+</body>    
+</html>

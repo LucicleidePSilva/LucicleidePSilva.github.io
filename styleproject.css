@@ -29,7 +29,6 @@ header {
 .center {
     text-align: center;
 }
-
 h1 {
     color: aqua;
     font-size: 50px;
@@ -37,111 +36,9 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px white;
 }
-.slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    overflow: hidden;
-}
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img {
-    width: 800px;
-    
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: 140px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #0a0000;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: #030342;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid #f13ad3;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 541px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #030342;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #030342;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #030342;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #030342;
-}
-
 h2 {
     color:aqua;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 h3 {
@@ -152,7 +49,9 @@ h3 {
 .center a:hover {
     color:aqua;
 }
-.container {
-    padding: 0px 50px;
-}
 
+@media (max-width: 600px){
+    #slider {
+        width: 100% !important;
+    }
+}
